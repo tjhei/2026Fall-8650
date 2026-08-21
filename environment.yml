@@ -1,0 +1,18 @@
+name: class-8650-environment
+channels:
+  - conda-forge
+dependencies:
+  - python =3.10
+  - jupyterlab >=3,<4.0.0a0
+  - graphviz
+  - pip
+  - openmpi
+  - gcc_linux-64
+  - gxx_linux-64
+  - mpi4py
+  - cmake
+  - pip:
+    - numpy
+    - jupyter
+    - lolviz
+    - matplotlib
