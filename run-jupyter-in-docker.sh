@@ -1,2 +1,2 @@
 #/bin/sh
-docker run -d -p 8888:8888 --name jupyter -v "$(pwd):/home/jovyan/work" tjhei/scipy-notebook
+docker run --rm -p 8888:8888 -user "$(id -u):$(id -g)" --name jupyter -v "$(pwd):/home/jovyan/work" tjhei/scipy-notebook
