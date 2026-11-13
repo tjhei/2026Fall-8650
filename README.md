@@ -40,3 +40,31 @@ Click "Interactive Apps" -> "Jupyter Notebook"
 When running a Jupyter session, you might want to specify a longer "walltime" than the default.
 
 Help page: https://docs.rcd.clemson.edu/openod
+
+## C++ Instructions
+
+# Option 1 (Using Binder)
+
+Please click the following link (you can edit and compile with g++ manually):
+
+https://mybinder.org/v2/gh/tjhei/2026Fall-8650/HEAD
+
+Use a remote VSCode binder:
+
+https://mybinder.org/v2/gh/betatim/vscode-binder/master?urlpath=lab
+
+# Option 2 (install yourself):
+
+install g++ (sudo apt install g++ in WSL or on Linux, already installed on MacOS)
+
+install VS Code
+
+# Option 3 (palmetto cluster):
+
+Access "OnDemand" on the palmetto cluster at https://ondemand.rcd.clemson.edu/ (see above)
+
+You can use "Code Server"
+
+### MPI Instructions
+
+see C++ instructions above. On Palmetto you need to ``module load openmpi/5``
