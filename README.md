@@ -43,7 +43,7 @@ Help page: https://docs.rcd.clemson.edu/openod
 
 ## C++ Instructions
 
-# Option 1 (Using Binder)
+### Option 1 (Using Binder)
 
 Please click the following link (you can edit and compile with g++ manually):
 
@@ -53,18 +53,38 @@ Use a remote VSCode binder:
 
 https://mybinder.org/v2/gh/betatim/vscode-binder/master?urlpath=lab
 
-# Option 2 (install yourself):
+### Option 2 (install yourself):
 
 install g++ (sudo apt install g++ in WSL or on Linux, already installed on MacOS)
 
 install VS Code
 
-# Option 3 (palmetto cluster):
+### Option 3 (palmetto cluster):
 
 Access "OnDemand" on the palmetto cluster at https://ondemand.rcd.clemson.edu/ (see above)
 
 You can use "Code Server"
 
-### MPI Instructions
+## MPI Instructions
 
-see C++ instructions above. On Palmetto you need to ``module load openmpi/5``
+see C++ instructions above.
+
+On Palmetto you need to ``module load openmpi/5`` (OneDemand Jupyter terminal or terminal job)
+
+Locally, you can use VSCode + docker container ``tjhei/scipy-mpi-notebook``
+
+on WSL/Linux you can use VSCode + install "g++ cmake libopenmpi-dev" in Ubuntu
+
+### on Mac:
+
+1. Install VSCode
+
+docker + ``tjhei/scipy-mpi-notebook``
+
+or local install:
+
+1. type ``clang`` to trigger the installation of the command line tools.
+
+2. Install homebrew: https://brew.sh/
+
+3. brew install --cc=clang cmake open-mpi gcc@11
